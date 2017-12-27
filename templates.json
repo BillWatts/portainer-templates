@@ -525,36 +525,36 @@
     "env": [
       {
         "name": "HOSTNAME",
-        "label": "Sets hostname inside the container",
-        "set": "yes"
+        "label": "Set hostname"
       },
       {
         "name": "TZ",
-        "label": "Sets timezone inside the container"
+        "label": "Set timezone"
       },
       {
         "name": "PLEX_CLAIM",
-        "label": "The claim token for the server to obtain a real server token, visit https://www.plex.tv/claim to obtain a claim token"
+        "label": "Set claim token"
       },
       {
         "name": "ADVERTISE_IP",
-        "label": "This variable defines the additional IPs on which the server may be be found"
+        "label": "Add additional IPs"
       },
       {
         "name": "PLEX_UID",
-        "label": "The user id of the plex user created inside the container"
+        "label": "User UID"
       },
       {
         "name": "PLEX_GID",
-        "label": "The group id of the plex group created inside the container"
+        "label": "User GID"
       },
       {
         "name": "CHANGE_CONFIG_DIR_OWNERSHIP",
-        "label": "Change ownership of config directory to the plex user, defaults to true"
+        "label": "Change ownership of config directory",
+        "set": "true"
       },
       {
         "name": "ALLOWED_NETWORKS",
-        "label": "IP/netmask entries which allow access to the server without requiring authorization"
+        "label": "IP/netmask allow access to the server without authorization"
       }
     ],
     "ports": [
@@ -585,36 +585,36 @@
     "env": [
       {
         "name": "HOSTNAME",
-        "label": "Sets hostname inside the container",
-        "set": "yes"
+        "label": "Set hostname"
       },
       {
         "name": "TZ",
-        "label": "Sets timezone inside the container"
+        "label": "Set timezone"
       },
       {
         "name": "PLEX_CLAIM",
-        "label": "The claim token for the server to obtain a real server token, visit https://www.plex.tv/claim to obtain a claim token"
+        "label": "Set claim token"
       },
       {
         "name": "ADVERTISE_IP",
-        "label": "This variable defines the additional IPs on which the server may be be found"
+        "label": "Add additional IPs"
       },
       {
         "name": "PLEX_UID",
-        "label": "The user id of the plex user created inside the container"
+        "label": "User UID"
       },
       {
         "name": "PLEX_GID",
-        "label": "The group id of the plex group created inside the container"
+        "label": "User GID"
       },
       {
         "name": "CHANGE_CONFIG_DIR_OWNERSHIP",
-        "label": "Change ownership of config directory to the plex user, defaults to true"
+        "label": "Change ownership of config directory",
+        "set": "true"
       },
       {
         "name": "ALLOWED_NETWORKS",
-        "label": "IP/netmask entries which allow access to the server without requiring authorization"
+        "label": "IP/netmask allow access to the server without authorization"
       }
     ],
     "ports": [
