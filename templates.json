@@ -516,6 +516,126 @@
   },
   {
     "type": "container",
+    "title": "Plex",
+    "description": "Plex Media Server",
+    "categories": ["streaming"],
+    "platform": "linux",
+    "logo": "https://www.plex.tv/wp-content/themes/plex/img/plex-logo@2x.png",
+    "image": "plexinc/pms-docker:latest",
+    "env": [
+      {
+        "name": "HOSTNAME",
+        "label": "Sets hostname inside the container",
+        "set": "yes"
+      },
+      {
+        "name": "TZ",
+        "label": "Sets timezone inside the container"
+      },
+      {
+        "name": "PLEX_CLAIM",
+        "label": "The claim token for the server to obtain a real server token, visit https://www.plex.tv/claim to obtain a claim token"
+      },
+      {
+        "name": "ADVERTISE_IP",
+        "label": "This variable defines the additional IPs on which the server may be be found"
+      },
+      {
+        "name": "PLEX_UID",
+        "label": "The user id of the plex user created inside the container"
+      },
+      {
+        "name": "PLEX_GID",
+        "label": "The group id of the plex group created inside the container"
+      },
+      {
+        "name": "CHANGE_CONFIG_DIR_OWNERSHIP",
+        "label": "Change ownership of config directory to the plex user, defaults to true"
+      },
+      {
+        "name": "ALLOWED_NETWORKS",
+        "label": "IP/netmask entries which allow access to the server without requiring authorization"
+      }
+    ],
+    "ports": [
+      "32400/tcp",
+      "3005/tcp",
+      "8324/tcp",
+      "32469/tcp",
+      "1900/udp",
+      "32410/udp",
+      "32412/udp",
+      "32413/udp",
+      "32414/udp"
+    ],
+    "volumes": [
+      "/config",
+      "/transcode",
+      "/data"
+    ]
+  },
+  {
+    "type": "container",
+    "title": "Plex (Plexpass)",
+    "description": "Plex Media Server with Plexpass",
+    "categories": ["streaming"],
+    "platform": "linux",
+    "logo": "https://www.plex.tv/wp-content/themes/plex/img/plex-logo@2x.png",
+    "image": "plexinc/pms-docker:plexpass",
+    "env": [
+      {
+        "name": "HOSTNAME",
+        "label": "Sets hostname inside the container",
+        "set": "yes"
+      },
+      {
+        "name": "TZ",
+        "label": "Sets timezone inside the container"
+      },
+      {
+        "name": "PLEX_CLAIM",
+        "label": "The claim token for the server to obtain a real server token, visit https://www.plex.tv/claim to obtain a claim token"
+      },
+      {
+        "name": "ADVERTISE_IP",
+        "label": "This variable defines the additional IPs on which the server may be be found"
+      },
+      {
+        "name": "PLEX_UID",
+        "label": "The user id of the plex user created inside the container"
+      },
+      {
+        "name": "PLEX_GID",
+        "label": "The group id of the plex group created inside the container"
+      },
+      {
+        "name": "CHANGE_CONFIG_DIR_OWNERSHIP",
+        "label": "Change ownership of config directory to the plex user, defaults to true"
+      },
+      {
+        "name": "ALLOWED_NETWORKS",
+        "label": "IP/netmask entries which allow access to the server without requiring authorization"
+      }
+    ],
+    "ports": [
+      "32400/tcp",
+      "3005/tcp",
+      "8324/tcp",
+      "32469/tcp",
+      "1900/udp",
+      "32410/udp",
+      "32412/udp",
+      "32413/udp",
+      "32414/udp"
+    ],
+    "volumes": [
+      "/config",
+      "/transcode",
+      "/data"
+    ]
+  },
+  {
+    "type": "container",
     "title": "Jenkins",
     "description": "Open-source continuous integration tool",
     "categories": ["continuous-integration"],
