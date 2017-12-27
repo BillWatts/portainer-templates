@@ -520,7 +520,7 @@
     "description": "Plex Media Server",
     "categories": ["streaming"],
     "platform": "linux",
-    "logo": "https://www.plex.tv/wp-content/themes/plex/img/plex-logo.png",
+    "logo": "https://pbs.twimg.com/profile_images/877289188747427840/LUfuf8ow.jpg",
     "image": "plexinc/pms-docker:latest",
     "env": [
       {
@@ -580,7 +580,7 @@
     "description": "Plex Media Server with Plexpass",
     "categories": ["streaming"],
     "platform": "linux",
-    "logo": "https://www.plex.tv/wp-content/themes/plex/img/plex-logo.png",
+    "logo": "https://pbs.twimg.com/profile_images/877289188747427840/LUfuf8ow.jpg",
     "image": "plexinc/pms-docker:plexpass",
     "env": [
       {
