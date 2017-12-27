@@ -522,6 +522,7 @@
     "platform": "linux",
     "logo": "https://pbs.twimg.com/profile_images/877289188747427840/LUfuf8ow.jpg",
     "image": "plexinc/pms-docker:latest",
+    "restart_policy": "always",
     "env": [
       {
         "name": "HOSTNAME",
@@ -582,6 +583,7 @@
     "platform": "linux",
     "logo": "https://pbs.twimg.com/profile_images/877289188747427840/LUfuf8ow.jpg",
     "image": "plexinc/pms-docker:plexpass",
+    "restart_policy": "always",
     "env": [
       {
         "name": "HOSTNAME",
